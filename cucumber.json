@@ -1,0 +1,10 @@
+{
+  "default": {
+  "formatOptions": {
+    "snippetInterface": "async-await"
+  },
+    "paths": ["src/**/*.e2e.feature"],
+    "require": ["src/**/*.e2e.step.ts", "features/**/*.support.ts"],
+    "dryRun": false
+  }
+}

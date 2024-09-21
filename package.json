@@ -8,6 +8,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "test": "bun test --coverage",
+    "test:e2e": "bunx --bun cucumber-js",
     "biome:format": "bunx biome format --write ./src",
     "biome:lint": "bunx biome lint --write ./src",
     "biome:check": "bunx biome check --write ./src"
@@ -29,6 +30,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
+    "@cucumber/cucumber": "^11.0.1",
     "@happy-dom/global-registrator": "^15.7.4",
     "@playwright/test": "^1.47.2",
     "@tailwindcss/typography": "^0.5.15",
