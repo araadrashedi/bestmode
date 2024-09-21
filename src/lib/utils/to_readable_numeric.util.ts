@@ -30,15 +30,3 @@ export function toReadableNumeric(input: number, fallback = "--") {
 
 	return input.toString()
 }
-
-// it('should convert numbers in the millions to a readable format with "M" suffix', () => {
-// 	const input = 2500000;
-// 	const result = toReadableNumeric(input);
-// 	expect(result).toBe('2.5M');
-// });
-
-// it('should handle exactly one million correctly', () => {
-// 	const input = 1000000;
-// 	const result = toReadableNumeric(input);
-// 	expect(result).toBe('1M');
-// });
