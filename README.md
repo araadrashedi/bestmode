@@ -65,7 +65,6 @@ The project is organized in the following way:
 │   ├── app/                 # Application pages and routes
 │   │   ├── auth/            # Authentication-related routes
 │   │   │   ├── login/       # Login page components and logic
-│   │   │   ├── logout/      # Logout page and logic
 │   │   │   └── verify/      # Email verification logic
 │   │   ├── unknown_error/   # Error pages (e.g., 500 error)
 │   │   ├── home/            # Homepage components and logic
