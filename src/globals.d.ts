@@ -40,3 +40,13 @@ type Post = {
 	reactionsCount: number
 	owner: { member: { name: string } }
 }
+
+type Perspective<Parameters extends Record<string, unknown> = unknown> =
+	import("@cucumber/cucumber").World<Parameters> & {
+		page: import("playwright").Page
+		baseURL: string
+		parameters: Parameters
+		openNewTab(): Promise<void>
+		setNetworkSlow(ms?: number): Promise<void>
+		closeCurrentTab(): Promise<void>
+	}
