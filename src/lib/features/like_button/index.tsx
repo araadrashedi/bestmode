@@ -62,6 +62,7 @@ export function LikeButton(props: PostProps) {
 			data-loading={toAttribute(isMutationLoading)}
 			onClick={applyReaction}
 			title="Like this post"
+			aria-label={isReacted ? "Unlike" : "Like"}
 		>
 			<HeartIcon
 				className="size-6 transition motion-safe:duration-200 data-[reacted]:stroke-red-600 group-hover:scale-[98%]"
@@ -72,8 +73,7 @@ export function LikeButton(props: PostProps) {
 		</Button>
 	)
 }
-LikeButton.Skeleton = LikeButtonSkeleton
 
-function LikeButtonSkeleton() {
+LikeButton.Skeleton = () => {
 	return <Skeleton className="h-[42px] w-[70px] rounded-full" />
 }

@@ -14,8 +14,8 @@ export function HomePage() {
 	if (!isNil(error) && isNil(data)) {
 		return (
 			<>
-				<h4 className="text-3xl font-bold leading-9 tracking-tight text-gray-900">Something went wrong!</h4>
-				<p className="text-gray-500">Details: {error.message}</p>
+				<h4 className="text-3xl font-bold leading-9 tracking-tight test-foreground">Something went wrong!</h4>
+				<p className="test-secondary-foreground">Details: {error.message}</p>
 			</>
 		)
 	}

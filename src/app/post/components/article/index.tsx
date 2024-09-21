@@ -86,7 +86,6 @@ Article.Skeleton = () => {
 					<Skeleton className="h-[31px] w-[80%]" />
 					<Skeleton className="h-[31px] w-[70%]" />
 				</Card.Title>
-				{/* <Card.Description></Card.Description> */}
 			</Card.Header>
 			<Card.Content className="pb-4">
 				<div className="space-y-4 py-2">
