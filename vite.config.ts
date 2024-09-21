@@ -21,18 +21,6 @@ export default defineConfig({
         changeOrigin: true,
         secure: true,
       },
-      '/app.bestmode': {
-        target: 'https://app.bettermode.com',
-        rewrite: (path) => path.replace(/^\/app.bestmode/, ''),
-        changeOrigin: true,
-        secure: true,
-      },
-      '/site.bestmode': {
-        target: 'https://basic-cdvpx8de.bettermode.io',
-        rewrite: (path) => path.replace(/^\/site.bestmode/, ''),
-        changeOrigin: true,
-        secure: true,
-      },
     },
   },
   test: {
