@@ -1,6 +1,6 @@
 # Project
 
-This is a blog application built using React, Vite, Apollo Client, and TypeScript. It provides functionalities such as authentication, listing posts, viewing a post, and a rich UI with reusable components.
+This is a posts gallery application built using React, Vite, Apollo Client, and TypeScript. It provides functionalities such as authentication, listing posts, viewing a post, and a rich UI with reusable components.
 
 ## Getting Started
 
