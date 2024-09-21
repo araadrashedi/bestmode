@@ -47,13 +47,6 @@ export function createApolloClient() {
 						},
 					},
 				},
-				Member: {
-					fields: {
-						isAuthenticated: {
-							read: (value, helpers) => false,
-						},
-					},
-				},
 			},
 		}),
 	})

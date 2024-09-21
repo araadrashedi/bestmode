@@ -135,7 +135,6 @@ export const getGetPostsQuery = () => gql`
 				owner {
 					__typename
 					member {
-						isAuthenticated @client
 						displayName
 						name
 						id
