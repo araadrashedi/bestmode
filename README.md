@@ -34,8 +34,7 @@ Create a .env.local file at the root of the project and configure it based on th
 
 To run the project locally with hot-reloading using Vite, execute the following command:
 ```bash
-bun dev
-# or: pnpm dev
+bun dev # or: pnpm dev
 ```
 The application will be accessible at http://localhost:5173
 
@@ -43,16 +42,14 @@ The application will be accessible at http://localhost:5173
 ### Building for Production
 To build the project for production, use the following command:
 ```bash
-bun run build
-# or: pnpm run build
+bun run build # or: pnpm run build
 ```
 This will output the optimized production build to the `dist` directory.
 
 ### Previewing the Build
 After building the project, you can preview the production build locally by running:
 ```bash
-bun run preview
-# or: pnpm run preview
+bun run preview # or: pnpm run preview
 ```
 This will start a local web server and open your app at http://localhost:4173
 
@@ -103,17 +100,23 @@ The project includes unit tests that validate the functionality of various logic
 
 Make sure all dependencies are installed and that your local development server is running:
 ```bash
-bun dev
-# or: pnpm dev
+bun dev # or: pnpm dev
 ```
 To run the unit tests with coverage stats, you can execute:
 ```bash
-bun test
-# or: pnpm test
+bun test # or: pnpm test
 ```
+### End-to-End Testing with Playwright
+To run end-to-end (e2e) tests, you need to ensure that Playwright is set up correctly.
 
-To run the e2e tests, while the dev server is up you can execute:
+1.	Install Playwright and Browsers:
 ```bash
-bun test:e2e
-# or: pnpm test:e2e
+npx playwright install
+```
+This command installs the necessary browser binaries required for Playwright tests.
+
+2.	Run e2e Tests:
+After the browsers are installed and the development server is running, you can execute the following command to run e2e tests:
+```bash
+bun test:e2e # or: pnpm test:e2e
 ```
