@@ -10,8 +10,8 @@ export class Perspective<Parameters=unknown> extends World<Parameters> {
 
   async openBrowser() {
     this.browser = await chromium.launch({
-      headless: false,
-      slowMo: 1000,
+      headless: import.meta.env.VITE_E2E_TEST_HEADLESS === "true",
+      slowMo: Number.parseInt(import.meta.env.VITE_E2E_TEST_SLOWMO ?? "0", 10),
     });
   }
 
