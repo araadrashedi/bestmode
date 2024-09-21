@@ -60,6 +60,7 @@ This will start a local web server and open your app at http://localhost:4173
 The project is organized in the following way:
 ```
 .
+├── features/                # BDD test related files
 ├── public/                  # Static assets such as images and icons
 ├── src/                     # Application source code
 │   ├── app/                 # Application pages and routes
@@ -109,4 +110,10 @@ To run the unit tests with coverage stats, you can execute:
 ```bash
 bun test
 # or: pnpm test
+```
+
+To run the e2e tests, while the dev server is up you can execute:
+```bash
+bun test:e2e
+# or: pnpm test:e2e
 ```
