@@ -1,0 +1,49 @@
+{
+  "name": "bestmode",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "bun test --coverage",
+    "biome:format": "bunx biome format --write ./src",
+    "biome:lint": "bunx biome lint --write ./src",
+    "biome:check": "bunx biome check --write ./src"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.11.8",
+    "apollo-link-rest": "^0.9.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "compression": "^1.7.4",
+    "express": "^4.21.0",
+    "graphql": "^16.9.0",
+    "lucide-react": "^0.439.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.1",
+    "sirv": "^2.0.4",
+    "tailwind-merge": "^2.5.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.8.3",
+    "@happy-dom/global-registrator": "^15.7.4",
+    "@playwright/test": "^1.47.2",
+    "@tailwindcss/typography": "^0.5.15",
+    "@types/bun": "latest",
+    "@types/express": "^4.17.21",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react-swc": "^3.7.0",
+    "autoprefixer": "^10.4.20",
+    "happy-dom": "^15.7.4",
+    "postcss": "^8.4.45",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.3",
+    "vitest": "^2.1.1"
+  },
+  "packageManager": "pnpm@9.1.4+sha512.9df9cf27c91715646c7d675d1c9c8e41f6fce88246f1318c1aa6a1ed1aeb3c4f032fcdf4ba63cc69c4fe6d634279176b5358727d8f2cc1e65b65f43ce2f8bfb0"
+}
